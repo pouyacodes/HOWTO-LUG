@@ -1,0 +1,148 @@
+
+\section{مقدمه}
+‍‍‍‍‍	
+\subsection{اهداف لاگ}
+
+راهنمای گروه کاربری لینوکس قصد دارد بعنوان مرجعی برای تاسیس، نگهداری و توسعه گروه های گنو/لینوکس استفاده شود.
+%The Linux User Group HOWTO is intended to serve as a guide to founding,
+%maintaining, and growing a GNU/Linux user group.
+
+گنو/لینوکس یک پیاده سازی بطور آزاد منتشر شده از یونیکس است که برای کامپیوتر های شخصی، سرور ها، کارگاه ها، \lr{PDA} ها و سیستم های نهفته طراحی شده است. گنو/لینوکس در ابتدا بر روی معماری \lr{i386} توسعه یافت و اکنون طیف گسترده ای از پردازنده ها را از کوچک تا بزرگ پشتیبانی می‌کند.
+%GNU/Linux is a freely-distributable implementation of Unix for personal
+%computers, servers, workstations, PDAs, and embedded systems.  It was
+%developed on the i386 and now supports a huge range of processors from 
+%tiny to colossal:
+
+\begin{note}
+لیست پلتفرم های پشتیبانی شده زیر قابل استنداد نیست و صرفا قصد دارد وسعت لینوکس را نمایش بدهد.
+\end{note}
+
+%Note:  The following supported-platforms list is not serious documentation.  
+%The point is merely to illustrate the breadth of Linux's reach.  
+
+اگر بطور جدی به پورت های لینوکس علاقه مندید میتوانید دو صفحه
+\tturl{http://web.archive.org/web/20070813000855/http://www.itp.uni-hannover.de/ports/linux_ports.html}
+و
+\tturl{http://web.archive.org/web/20050308130348/http://ngc891.blogdns.net/kernel/docs/arch.txt}
+را نیز برسی کنید.  (هردو صفحه مذکور در سال ۲۰۰۵ ناپدید شدند)
+چرا که پشتیبانی سخت‌افزاری پیچیده‌تر از عملکرد عمومی \lr{CPU} است و شامل پشتیبانی از انواع مختلف \lr{bus} و مسائل ظریف سخت‌افزاری دیگر می‌شود (به‌ویژه برای پورت‌های لینوکس PDA / embedded / microcontroller / router با اشاره به منبع
+\tturl{http://www.linuxfordevices.com/}
+).
+
+%If seriously interested in the subject of Linux ports, please see also 
+
+%\emph{Xose Vazquez Perez's Linux ports page} \tturl{http://web.archive.org/web/20070813000855/http://www.itp.uni-hannover.de/ports/linux_ports.html}
+%and
+%\emph{Jerome Pinot's Linux architectures list} \tturl{http://web.archive.org/web/20050308130348/http://ngc891.blogdns.net/kernel/docs/arch.txt}
+
+% (static mirrors, as both pages vanished in 2005), if only because 
+%hardware support is more complex than just generic CPU functionality, 
+%encompassing support for myriad bus variations and other subtle hardware
+%issues (especially for 
+
+%\href{http://www.linuxfordevices.com/}{Linux PDA / embedded / microcontroller / router ports}
+%).  
+
+\begin{latin}
+\begin{itemize}
+	\item {\bfseries Diverse \emph{PDA / embedded / microcontroller / router} \tturl{http://www.uclinux.org/ports/} devices:} 
+	\begin{itemize}
+		\item Advanced RISC Machines, Ltd. \emph{ARM} \tturl{http://www.arm.linux.org.uk/} family (StrongARM SA-1110, XScale, ARM6, ARM7, ARM2, ARM250, ARM3i, ARM610, ARM710,ARM7TDMI, ARM720T, and ARM920T, including Sigma Designs DVD systems using ARM cores)
+		\item Analog Devices, Inc.'s \emph{Blackfin DSP} \tturl{http://www.linuxfordevices.com/c/a/News/Another-nativeDSP-Linux-port-this-one-to-ADIs-Blackfin/}
+		\item Axis Communications \emph{ETRAX series} \tturl{https://en.wikipedia.org/wiki/ETRAX_CRIS}
+			("CRIS" = Code Reduced Instruction Set RISC architecture)
+		\item Elan SC520 and SC300
+		\item FreeScale \emph{MC68EN302} \tturl{http://www.freescale.com/files/netcomm/doc/data_sheet/MC68EN302.pdf}
+		\item Fujitsu \emph{FR-V} \tturl{http://ecos.sourceware.org/hardware.html#FR-V}
+		\item Hitachi \emph{H8} \tturl{http://www.uclinux.org/pub/uClinux/ports/h8/} series
+		\item Intel i960
+		\item Intel IA32-compatibles (Cyrix MediaGX, STMicroelectronics \emph{STPC} \tturl{http://web.archive.org/web/20070626190436/http://www.stmcu.com/forums-cat-132-6.html}, ZF Micro ZFx86)
+		\item Matsushita \emph{AM3x} \tturl{http://ecos.sourceware.org/hardware.html#MatsushitaAM3x}
+		\item MIPS-compatibles (Toshiba TMPRxxxx / TXnnnn, NEC \emph{VR} \tturl{http://www.linux-mips.org/wiki/NEC_VR4100} series, Realtek 8181")
+		\item Motorola 680x0-based machines (Motorola VMEbus boards, 
+			\emph{ISICAD Prisma} \tturl{http://ds.dial.pipex.com/town/way/fr30/} machines, and Motorola Dragonball \& 
+			\emph{ColdFire} \tturl{http://www.uclinux.org/ports/coldfire/} CPUs, and Cisco 2500/3000/4000 series routers)
+		\item Motorola embedded \emph{PowerPC} \tturl{http://penguinppc.org/embedded/}
+			(including MPC / PowerQUICC I, II, III families)
+		\item NEC \emph{V850E} \tturl{http://ecos.sourceware.org/tools/linux-v850-elf.html}
+		\item Renesas Technology (formerly Hitachi) SH3/SH4 (\emph{SuperH} \tturl{http://wiki.debian.org/SH4})
+		\item Samsung \emph{CalmRISC} \tturl{http://ecos.sourceware.org/hardware.html#CalmRISC}
+		\item Texas Instruments's 
+		\emph{DM64x} \tturl{http://www.linuxfordevices.com/c/a/News/Worlds-first-nativeDSP-Linux-port/}
+			and \emph{C54x DSP} \tturl{http://www.linuxfordevices.com/c/a/News/Embedded-Linux-distro-supports-TI-DSPbased-digital-media-processors/} families
+		\item Xilinx \emph{PetaLinux} \tturl{http://www.xilinx.com/tools/petalinux-sdk.htm}
+			(formerly SoftBlaze, formerly Microblaze) soft processor implemented on Xilinx FPGAs
+	\end{itemize}
+
+	\item {\bfseries Intel \emph{8086 / 80286} \tturl{http://elks.sourceforge.net/}}.
+	\item {\bfseries Intel IA32 family:} i386, i486, Pentium, Pentium Pro, 
+		Pentium II, Pentium III, Celeron, Xeon, and Pentium IV processors, 
+		as well as IA32 clones from AMD (386DX/DXL/SL/SLC/SX, 
+		486DX/DX2/DX4/SL/SLC/SLC2/SLC3/SX/SX2, Elan, K5, 
+		K6/K6-II/K6-III), Cyrix (386DX/DXL/SL/SLC/SX, 
+		486DLC/DLC2/DX/DX2/DX4/SL/SLC/SLC2/SLC3/SX/SX2, Cyrix III), 
+		IDT (Winchip, Winchip 2, Winchip 2A/3), 
+		IBM (486DX/DX2/DX4/SL/SLC/SLC2/SLC3/SX/SX2),
+		NexGen (Nx586), Transmeta (Crusoe), 
+		TI (486DLC/DLC2), UMC (486SX-S, U5D/U5S), 
+		VIA (C3 Ezra "CentaurHauls", C3-2 "Nehemiah"), 
+		and others.
+	\item {\bfseries Intel/HP \emph{IA64} \tturl{http://www.ia64-linux.org/}:} Trillian, Itanium, Itanium2/McKinley
+	\item {\bfseries x86-64 family} including AMD Hammer/Opteron/K8/Athlon64/Turion/Phenom/Phenom II/FX/Fusion and 
+		Intel Prescott/Nocona/Potomac, Core, Atom, Nehalem, Sandy Bridge and Ivy Bridge
+	\item {\bfseries Motorola \emph{68020-68040}
+		\tturl{http://www.linux-m68k.org/} series (with MMU)}: 
+		\emph{m68k Mac} \tturl{http://www.mac.linux-m68k.org/},
+		Amiga, Atari ST/TT/Medusa/Falcon, HP/Apollo Domain,
+		\emph{HP9000/300} \tturl{http://www.tazenda.demon.co.uk/phil/linux-hp/}, sun3, and 
+		\emph{Sinclair Q40} \tturl{http://ftp4.de.freesbie.org/pub/misc/tsx-11/680x0/q40/install/}.
+	\item {\bfseries Motorola/IBM PowerPC family:} Most 
+		\emph{PowerMac} \tturl{http://penguinppc.org/mac/}
+		 (including G3/G4/G5)  / CHRP / PReP / POP, \emph{Amiga PowerUP System}
+		 \tturl{http://linux-apus.sourceforge.net/}, and IBM PPC64 (AS/400, RS/6000, iSeries,	pSeries, PowerMac G5).
+	\item {\bfseries \emph{MIPS} \tturl{http://www.linux-mips.org/}:} most SGI, Cobalt Qube, 
+		\emph{DECStation} \tturl{http://decstation.unix-ag.org/}, Sony PlayStation2, and many others
+	\item {\bfseries DEC\emph{Alpha} \tturl{http://www.alphalinux.org/}}
+	\item {\bfseries HP \emph{PA-RISC} \tturl{http://www.parisc-linux.org/}}
+	\item {\bfseries SPARC International SPARC32 / SPARC64}
+	\item {\bfseries Digital \emph{VAX} \tturl{http://vax-linux.org/} minicomputers and MicroVAXen}
+	\item {\bfseries Mainframes:} 
+	\emph{IBM S/390 models G5 and G6 / zSeries models z800, z890, z900, and z990} \tturl{https://www.ibm.com/developerworks/linux/linux390/}
+		 and Fujitsu AP1000+ (SuperSPARC cluster)
+\end{itemize}
+\end{latin}
+
+توجه کنید که موارد ذکر شد بعضا تنها یک بار فورک شده اند. کوچک یا بزرگ هرچیزی هستند که تا کنون نگهداری شده است. در برخی از معماری های نادر،
+\ftnt{NetBSD}{http://www.netbsd.org/}
+گاها کارآمد تر خواهد بود. همچنان پورت
+\ftnt{Debian GNU/kFreeBSD}{http://www.debian.org/ports/kfreebsd-gnu/}
+به اندازه کافی سازگار و مناسب میباشد. این پورت مجهز به کد یوزر اسپیس گنو/لینوکس بر روی کرنل فری بی اس دی با پرفرمنس بالا و پایداری بالا،
+\ftnt{OpenIndiana}{https://en.wikipedia.org/wiki/OpenIndiana}
+و یا دیگر 
+\ftnt{Illumos distribution}{https://en.wikipedia.org/wiki/Illumos#Relatives}
+میباشد و میتواند چیز دیگری مشابه کرنل اوپن سولاریس فراهم کند.
+
+%Note that some items listed were probably one-time forks, little or not
+%at all maintained since creation.  On some of the rarer architectures, \emph{NetBSD} \texttt{http://www.netbsd.org/} may be more practical.(The \emph{Debian GNU/kFreeBSD} \texttt{http://www.debian.org/ports/kfreebsd-gnu/}
+% port should also be solid enough to 
+%serve as a compromise option, furnishing GNU/Linux userspace code on the
+%high performance / high stability FreeBSD kernel, and 
+%\emph{OpenIndiana} \texttt{https://en.wikipedia.org/wiki/OpenIndiana}
+% or another 
+%\emph{Illumos distribution} \texttt{https://en.wikipedia.org/wiki/Illumos#Relatives}
+% can provide something similar on the OpenSolaris kernel.)
+
+
+\subsection{سایر منابع اطلاعاتی}
+%\subsection{Other sources of information}
+
+اگر میخواهید مطالب بیشتری مطالعه کنید، 
+\ftnt{Linux Documentation Project}{http://www.tldp.org/}
+منبع بهتری برای شروع می‌باشد. برای اطلاعات عمومی راجع به گروه های کاربری کامپیوتر نیز لطفا
+\ftnt{Association of PC Users Groups}{http://apcug2.org/}
+را بررسی کنید.
+
+%If you want to learn more, the \emph{Linux Documentation Project} \texttt{http://www.tldp.org/} is a good place to start.
+%For general information about computer user groups, please see the \emph{Association of PC Users Groups} \texttt{http://apcug2.org/}.
+
+
