@@ -19,9 +19,12 @@
 \usepackage{lmodern}
 \usepackage{xcolor}
 \usepackage[most]{tcolorbox}
+\usepackage{blindtext}
 
 \usepackage{xepersian}
 \settextfont{IRNazanin}
+
+\@newctr{footnote}[page]
 
 \newtcolorbox{note}[1][]{
   enhanced jigsaw,
@@ -48,4 +51,6 @@
 
 \newcommand\ftnt{\begingroup\catcode`\#=12\relax\@ftnt}
 \newcommand{\@ftnt}[2]{\endgroup\emph{\lr{#1}}\LTRfootnote{\tturl{#2}}}
+
+\newcommand{\tftnt}[2]{\emph{\lr{#1}}\LTRfootnote{\lr{#2}}}
 

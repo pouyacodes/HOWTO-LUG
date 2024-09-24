@@ -1,43 +1,58 @@
-\section{What is a GNU/Linux user group?}
+\section{گروه کاربری گنو/لینوکس چیست؟}
+%\section{What is a GNU/Linux user group?}
 
-\subsection{What is GNU/Linux?}
+\subsection{گنو/لینوکس چیست؟}
+%\subsection{What is GNU/Linux?}
 
-To fully appreciate LUGs' (Linux User Groups') role in the GNU/Linux 
-movement, it helps to understand what makes GNU/Linux unique.
+برای درک کامل نقش
+\lr{LUGs (Linux User Groups)}
+در جنبش گنو/لینوکس، فهم اینکه چه چیز گنو/لینوکس را منحصر به فرد ساخته است کمک می‌کند.
+%To fully appreciate LUGs' (Linux User Groups') role in the GNU/Linux
+%movement, it helps to understand what makes GNU/Linux unique.
 
-GNU/Linux as an operating system is powerful -- but GNU/Linux as an
-{\itshape {\bfseries idea}\/} about software development is even more so. GNU/Linux
-is a {\bfseries free} operating system: It's licensed under the GNU General
-Public Licence (and other open source / free software licences -- though 
-proprietary application software is sometimes also included in
-particular packagings). Thus, source code is freely available in
-perpetuity to anyone. It's maintained by a unstructured group of
-programmers world-wide, under technical direction from Linus Torvalds
-and other key developers. GNU/Linux as a movement has no central
-structure, bureaucracy, or other entity to direct its affairs. While
-this situation has advantages, it poses challenges for allocation of
-human resources, effective advocacy, public relations, user education,
-and training.
+گنو/لینوکس به عنوان یک سیستم عامل،بسیار قدرتمند است. اما به عنوان یک
+{\bfseries ایده}
+راجع به توسعه نرم‌افزار حتی قدرتمند تر هم میتواند باشد. گنو لینوکس یک سیستم عامل
+{\bfseries آزاد}
+تحت لایسنس
+\lr{GNU General Public Licence}
+(و یا دیگر پروانه های متن‌باز/نرم‌افزار آزاد که گاها شامل تعدادی پکیج های انحصاری نیز هستند) است. بنابر این سورس کد، رایگان و برای همیشه در دسترس همگان خواهد بود و توسط گروهی بدون ساختار از برنامه‌نویسان سرتاسر دنیا زیر نظر راهبری فنی لینوس توروالدز و دیگر توسعه‌دهنده های کلیدی این پروژه نگهداری می‌شود. گنو/لینوکس همانند یک جنبش فاقد ساختار مرکزی، بروکراسی و یا نهاد دیگریبرای امور خود می‌باشد. درحالی که این وضعیت مزایایی دارد، چالش هایی برای اختصاص منابع انسانی، حمایت موثر، روابط عمومی، تعلیم کاربران و آموزش را به همراه دارد.
+%GNU/Linux as an operating system is powerful -- but GNU/Linux as an
+%{\itshape {\bfseries idea}\/} about software development is even more so. GNU/Linux
+%is a {\bfseries free} operating system: It's licensed under the GNU General
+%Public Licence (and other open source / free software licences -- though 
+%proprietary application software is sometimes also included in
+%particular packagings). Thus, source code is freely available in
+%perpetuity to anyone. It's maintained by a unstructured group of
+%programmers world-wide, under technical direction from Linus Torvalds
+%and other key developers. GNU/Linux as a movement has no central
+%structure, bureaucracy, or other entity to direct its affairs. While
+%this situation has advantages, it poses challenges for allocation of
+%human resources, effective advocacy, public relations, user education,
+%and training.
 
+\begin{note}
+این راهنما به بنیاد نرم‌افزار آزاد
+\ftnt{GNU Project}{http://www.gnu.org/gnu/gnu-history.html}
+بعنوان قدرت محرک اساسی در ایجاد و پیشبرد یک سیستم یک‌پارچه آزاد و یا همان متن‌باز اعتبار می‌دهد. بنابراین به "توزیع‌ها" شامل سیستم عامل گنو به همراه کرنل لینوکس به عنوان "گنو/لینوکس" ارجاع می‌دهد. البته این رایج نیست که بجای تمام توزیع‌ها از اصطلاح گنو/لینوکس استفاده شود و این خواسته
+\tftnt{FSF}{Free Software Foundation}
+برای اعتباردهی به طور گسترده مورد احترام قرار نمی‌گیرد اما عادلانه بودن این خواسته کاملا واضح است.
+\end{note}
 
+%(This HOWTO credits the Free Software Foundation's
+%\emph{GNU Project} \texttt{\abrurl}
+% as the crucial motive force behind creating and furthering a free 
+%aka open source integrated system.  Thus, it refers to "distributions" 
+%comprising the GNU operating system atop the Linux kernel as "GNU/Linux".
+%Yes, the term is awkward, and FSF's request for credit isn't widely 
+%honoured; but the justice of FSF's claim is obvious.)
 
-(This HOWTO credits the Free Software Foundation's 
-
-\emph{GNU Project} \texttt{\abrurl}
- as the crucial motive force behind creating and furthering a free 
-aka open source integrated system.  Thus, it refers to "distributions" 
-comprising the GNU operating system atop the Linux kernel as "GNU/Linux".
-Yes, the term is awkward, and FSF's request for credit isn't widely 
-honoured; but the justice of FSF's claim is obvious.)
-
-(This HOWTO's maintainer is also fully aware that the world at large
-will never adopt this usage, justice notwithstanding.  If it seems 
-mannered, please indulge him, and respect the gesture.)
-
-
-
-
-
+\begin{note}
+نگهدارنده این راهنما کاملا آگاه است که جهان به‌طور کلی باوجود عادلانه بودن این مطلب هرگز آن را نخواهد پذیرفت.
+\end{note}
+%(This HOWTO's maintainer is also fully aware that the world at large
+%will never adopt this usage, justice notwithstanding.  If it seems 
+%mannered, please indulge him, and respect the gesture.)
 
 \subsection{How is GNU/Linux unique?}
 
@@ -61,9 +76,6 @@ and support its products. These jobs get done through diverse means: the
 Internet, consultants, VARs, support companies, colleges, and
 universities. However, increasingly, in many places around the globe,
 they are done by a LUG.
-
-
-
 
 \subsection{What is a user group?}
 
@@ -183,12 +195,6 @@ who's suddenly decided to destroy the LUG (which does happen), the
 strife will drive away key people.
 \end{itemize}
 
-
-
-
-
-
-
 \subsection{Summary}
 
 For the GNU/Linux movement to grow, among other requirements,
@@ -198,6 +204,4 @@ office" provides for large computer corporations like IBM, Microsoft,
 and Sun. LUGs can and must train, support, and educate users,
 coordinate consultants, advocate GNU/Linux as a computing solution,
 and even serve as liaison to local news outlets.
-
-
 
