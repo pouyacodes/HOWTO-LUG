@@ -70,5 +70,8 @@
 \newcommand\ftnt{\begingroup\catcode`\#=12\relax\@ftnt}
 \newcommand{\@ftnt}[2]{\endgroup\emph{\lr{#1}}\LTRfootnote{\tturl{#2}}}
 
+\newcommand\fftnt{\begingroup\catcode`\#=12\relax\@fftnt}
+\newcommand{\@fftnt}[2]{\endgroup\emph{#1}\LTRfootnote{\tturl{#2}}}
+
 \newcommand{\tftnt}[2]{\emph{\lr{#1}}\LTRfootnote{\lr{#2}}}
 
