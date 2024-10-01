@@ -24,6 +24,9 @@
 \usepackage{xepersian}
 \settextfont{IRNazanin}
 
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
 \@newctr{footnote}[page]
 
 \newtcolorbox{note}[1][]{
