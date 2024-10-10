@@ -20,6 +20,10 @@
 \usepackage{xcolor}
 \usepackage[most]{tcolorbox}
 \usepackage{blindtext}
+\usepackage{longtable}
+\usepackage{tabularray}
+\usepackage{xurl}
+\usepackage{ifthen}
 
 \usepackage{xepersian}
 \settextfont{IRNazanin}
@@ -78,4 +82,14 @@
 
 \newcommand{\tftnt}[2]{\emph{\lr{#1}}\LTRfootnote{\lr{#2}}}
 \newcommand{\tfftnt}[2]{\emph{#1}\LTRfootnote{\lr{#2}}}
+
+\newcommand{\irluginfo}[5]{
+\item {\large #1}
+\begin{description}
+\ifthenelse{\equal{#2}{}}{}{\item [وبسایت] \url{#2}}
+\ifthenelse{\equal{#3}{}}{}{\item [کانال تلگرام] \url{#3}}
+\ifthenelse{\equal{#4}{}}{}{\item [گروه تلگرام] \url{#4}}
+\ifthenelse{\equal{#5}{}}{}{\item [گیت‌] \url{#5}}
+\end{description}
+}
 
