@@ -67,7 +67,6 @@
   #1
 }
 
-
 \newcommand\tturl{\begingroup\catcode`\#=12\relax\@tturl}
 \newcommand{\@tturl}[1]{\endgroup\texttt{\url{#1}}}
 
