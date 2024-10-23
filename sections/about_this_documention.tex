@@ -1,201 +1,116 @@
-\section{About this document}
+\section{درباره این مستند}
+%\section{About this document}
 
-\subsection{Terms of use}
+\subsection{شرایط استفاده}
+%\subsection{Terms of use}
 
-Copyright (C) 2003-2022, Rick Moen.  Copyright (C) 1997-1998 by Kendall Grant 
-Clark. This document may be distributed under the terms set forth 
-in the Creative Commons Attribution-ShareAlike 4.0 International licence at 
-\emph{http://creativecommons.org/licenses/by-sa/4.0/} \texttt{\aeuurl}
-, or, at your
-option, any later version.
+حق‌نشر این راهنما از سال ۲۰۰۳ تا ۲۰۲۲ متعلق به
+\tfftnt{ریک مون}{Rick Moen}
+و از سال ۱۹۹۷ تا ۱۹۹۸ متعلق به
+کندال گرانت
+\tfftnt{کلارک کندال گرانت}{Kendall Grant Clark}
+بوده است.
+این مستند می‌تواند تحت مجوز بین‌المللی
+\ftnt{Creative Commons Attribution-ShareAlike 4.0}{http://creativecommons.org/licenses/by-sa/4.0/}
+یا نسخه‌های بعدی آن منتشر شود.
+%Copyright (C) 2003-2022, Rick Moen.  Copyright (C) 1997-1998 by Kendall Grant 
+%Clark. This document may be distributed under the terms set forth 
+%in the Creative Commons Attribution-ShareAlike 4.0 International licence at 
+%\emph{http://creativecommons.org/licenses/by-sa/4.0/} \texttt{http://creativecommons.org/licenses/by-sa/4.0/}
+%, or, at your
+%option, any later version.
 
-\subsection{New versions}
+\subsection{نسخه‌های جدید}
+%\subsection{New versions}
 
-New versions of the Linux User Group HOWTO will be periodically
-uploaded to various GNU/Linux Web sites, principally 
-\emph{http://linuxmafia.com/lug/} \texttt{\aevurl}
-and the
-\emph{Linux Documentation Project} \texttt{\aewurl}.
+نسخه‌های جدید این مستند از وبسایت و منابع مختلف مرتبط به گنو/لینوکس منتشر خواهد شد.
+نسخه‌های جدید زبان فارسی آن در مخزن گیتهاب
+\url{https://github.com/alirezaarzehgar/HOWTO-LUG}
+منتشر خواهد شد.
+نسخه‌های انگلیسی آن نیز از سایت‌های
+\fftnt{لینوکس مافیا}{http://linuxmafia.com/lug/}
+و
+\fftnt{پروژه مستندسازی لینوکس}{http://www.tldp.org/}
+منتشر خواهند شد.
+%New versions of the Linux User Group HOWTO will be periodically
+%uploaded to various GNU/Linux Web sites, principally 
+%\emph{http://linuxmafia.com/lug/} \texttt{http://linuxmafia.com/lug/}}
+%and the
+%\emph{Linux Documentation Project} \texttt{http://www.tldp.org/}.
 
-\subsection{Please contribute to this HOWTO}
+\subsection{لطفا در  بهبود این مستند مشارکت کنید}
+%\subsection{Please contribute to this HOWTO}
 
-I welcome questions about and feedback on this document. Please send
-them to me at \ifpdf
-\href{mailto:rick@linuxmafia.com}{rick@linuxmafia.com}%
-\else
-\onlynameurl{rick@linuxmafia.com}%
-\fi{}
-. {\itshape I am especially interested in
-hearing from LUG leaders around the world, especially outside the USA\/}.
-Please let me know of innovative or noteworthy things your group does,
-meriting description here.
+نسخه ترجمه شده این مستند شدیدا نیازمند مشارکت می‌باشد. لطفا با توسعه و مشارکت در این راهنما
+کمک کنید تا راهنمای بهتری را برای ایجاد و نگهداری از لاگ‌ها ایجاد کنیم. در تمام سرفصل‌های این کتاب
+کمبود اطلاعات راجع به لاگ‌های داخل ایران وجود دارد. لطفا اگر هر اطلاعاتی دارید در این مستند اضافه کرده
+و به مخزن این پروژه در گیتهاب \lr{PR} بدهید. همچنان هر مشکلی از هر جهتی در این پروژه وجود دارد
+می‌توانید با درست کردن ایشو در مخزن گیتهاب
+\fftnt{این پروژه}{https://github.com/alirezaarzehgar/HOWTO-LUG}
+به توسعه آن کمک کنید.
+از هر نوع مشارکتی در این پروژه استقبال می‌شود. اگر تمایل دارید این پروژه را بهبود بدهید.
 
-\subsection{Document history}
+در صورتی که سوالی بپرسید یا بازخوردی را نیز می‌خواستید به مدیر فعلی نسخه زبان اصلی این مستند بگویید،
+می‌توانید از آدرس
+\href{mailto:rick@linuxmafia.com}{rick@linuxmafia.com}
+او را در جریان بگذارید.
 
-\begin{itemize}
-\item 1.0: Released on 13 July 1997.
-\item 1.1: Expanded online resources section.
-\item 1.3: Added LUG support organisations and expanded the Legal and Organisational Issues section.
-\item 1.3.1: General editing for clarity and conciseness.
-\item 1.4: General editing, added new LUG resources.
-\item 1.4.1: General editing for clarity.
-\item 1.5: Added some resources, some discussion of LUG documentation, also general editing.
-\item 1.5.1: Changed Web location for this document and author's e-mail address.
-\item 1.5.2: New copyright notice and license.
-\item 1.5.3: Miscellaneous edits and minor re-organisations.
-\item 1.6: Added Chris Browne's material: GNU/Linux philanthropic
-donations and LUG political considerations.
-\item 1.6.1: Very minor additions.
-\item 1.6.2: Minor corrections.
-\item 1.6.3: Maintenance assumed by Rick Moen on 26 July 2003:  General 
-initial touch-up, correction of broken URLs, etc.
-\item 1.6.4: Further minor fixes and additions.
-\item 1.6.5: More-extensive edits, added "Limits of advocacy",
-added caveat about conflicting value systems in support contexts.  Added
-more news sites, reordered examples of LUGs using Internet well.  General 
-tightening of phrasing, greater brevity in places, tempering of the more
-egregious boosterism.
-\item 1.6.6: More small fixes, added Yahoo LUG list.
-\item 1.6.7: Added formal-organisational pros/cons, "Elections,
-democracy, and turnover" section, Web site suggestions, and link
-to "Recipe for a Successful Linux User Group" essay. Fixed mis-tagged 
-sections under "Legal and political issues".
-\item 1.6.8: Fixed small glitches.  Rewrote section concerning
-GNU/Linux news outlets; parts of sections concerning consultants, businesses,
-and elections.
-\item 1.6.9: Minor corrections.
-\item 1.7.0: Caught up with GLUE membership having become free
-of charge.
-\item 1.7.1: Added a bunch more newly supported embedded CPUs.
-\item 1.7.2: Added more on CPU support / ports (which section was always a bit silly, but I figure it might as well be exhaustive, correct, and {\itshape grandly\/} silly, if present at all); furnished matching URLs.  Added details about GNU/Linux in India, and {\itshape LINUX For You\/} magazine.  Expanded legal issues section.
-\item 1.7.3: Added mention of Debian GNU/NetBSD to the CPU ports 
-section.  Reorganised and further expanded the latter.  Recorded {\itshape Linux
-Gazette\/}'s move to new hosting.  Added {\itshape LinuxFocus\/}.
-\item 1.7.4: Added {\itshape LinuxWorld Magazine\/}, fixed URL of Recipe for
-a Successful Linux User Group, which I moved.  Added Tux.Org and 
-LinuxUserGroups.org as LUG support organisations.
-\item 1.7.5: Added several more embedded CPUs to the supported list, implemented licence change (9 Jan 2004) to Creative Commons Attribution ShareAlike 1.0 or later after securing permission from Kendall Clark. (The HOWTO had previously been under the LDPL version posted at LDP's site in 1997, which by 2004 had become not only deprecated but also somewhat indeterminate as to content, because the licence had been edited in place with neither clear versioning nor a distinct URL for each revision.)
-\item 1.7.6: Corrected addresses for TeX User Group in USA and
-UK.  Added mention of C. Northcote Parkinson's Bike Shed Effect.  Other 
-minor corrections.
-\item 1.7.7: Added reference to the UK Linux User Groups site.
-Added description of PingoS e.V.  Corrected URL for Thomas Kappler's 
-e-mail address.  Added Volgograd LUG to Online Resources.
-\item 1.7.8: Added Jerome Pinot's Linux architectures list,
-used some data from it.  Added "I Linux User Group italiani".  
-Corrected capitalisation of PingoS.  After securing permission from
-Kendall Clark, added "or any later version" clause to document licence.
-\item 1.7.9: Corrected India Linux link and added 
-{\itshape LINUX For You\/}, per suggestions from Rohit Kumar.  Added Linux 
-Foundation to list of candidates for receiving monetary support.  Made fixes 
-to Red Hat LUG list (reincarnated as "Army of Friends" database), as suggested 
-by Vincenzo Virgilio. Added LinuxHQ and O'Reilly LUG lists and FSF GNU User 
-Groups list.  Added Wikipedia Category:LUGs page.  Dropped material about the 
-GLUE site, which SSC, Inc.  tragically deleted in mid-2006 without allowing 
-anyone a chance to adopt it.  Added kernel support for two more embedded chip 
-families.  Substituted static mirrors for two (vanished) pages listing 
-Linux kernel ports.  Dropped {\itshape LinuxWorld Magazine\/} (vanished).  
-Removed references to getting help in founding LUGs from Red Hat User 
-Group Program and Kara Pritchard's LinuxUserGroups.org (both vanished) 
-and from lug.net (deactivated).  Added Swedish tax/regulatory details 
-from Martin Karlsson.  Added analysis of issues surrounding incorporation, 
-tax-exempt status, and insurance in the USA.  Found new URLs for a vast 
-number of links.  Updated licence to Creative Commons BY-SA 3.0, to 
-incorporate improvements.  Re-sorted country coverage into alphabetical 
-order (a small gesture to further reduce US-centrism).
-\item 1.8.0:  Corrected typos.  Improved some markup.  Expanded "Common Misconceptions Debunked" section to address recently popular errors about USA Volunteer Protection Act of 1997, civil liability, and IRS 501(c)(3) tax-exempt status.  Linked directly to the Act and an analysis page.  Furnished links for {\itshape Non-Lawyers' Non-Profit Corporation Kit\/}, for {\itshape DistroWatch Weekly\/}, and for the Raymond quotation.
-\item 1.8.1:  Banished more typos.  (I blame society.)
-\item 1.8.2:  Added more CPU ports.  APCUG changed Web sites.  Linux India's LUG list, lugww.counter.li.org (formerly Woven Goods's Linux Worldwide LUG list), Red Hat Army of Friends, LUG Webring, O'Reilly LinuxGroups, and {\itshape LINUX For You Magazine\/} (of India) LUG List vanished.  IDG moved the Raymond article (again).  LinuxFocus was revived via a CMS.  NewsForge was shut down by The Company Formerly Known as VA Linux.  Linux International Development Grant Fund program vanished.  Project Gutenberg moved to its own domain.  Colorado Linux Users and Enthusiasts moved.  Added mention of IRS e-Postcard for 501(c) non-profits.  Added Linux Users Group - Delhi.  Added New Zealand Linux Resource.  Added Project Runeberg.
-\item 1.8.3:  Replacement ARM Linux Web site.  New URLs for many embedded and other systems.  SoftBlaze renamed to PetaLinux.  LUGs WorldWide Project, Linux Online -- User Groups, LinuxHQ User Groups, and New Zealand Linux Resource vanished.  Free Software Foundation GNU Users Groups got moved/renamed to LibrePlanet Group List.  New URLs for LinuxFormat and LinuxCounter.  PingoS e.V. vanished (though its SelfLinux project for hypertext tutorials in the German language persists).  Linux User Group of Singapore, St. Petersburg Linux User Group, and Svenska Linuxforeningen folded.
-\item 1.8.4:  Linux.org (without its former Linux Online branding) has been rebuilt and offers a new LUG directory.
-\item 1.8.5:  Replaced defunct NexentaOS with Dyson and other
-IllumOS distributions.  Recorded new URL for APCUG.  Rewrote introduction
-to list of supported hardware platforms to stress that this part isn't
-serious documentation, but just intended to illustrate the breadth of
-Linux's reach.  Corrected slightly incorrect statement about licensing of
-Linux-based OSes.  Added new section Avoiding Burnout and Decline.
-Added hackerspaces to list of possible meeting venues.  Added Lugslist, which
-heroically rose in 2015 to explicitly compensate for collapse of the
-much-missed lugww.counter.li.org and GLUE LUG lists.  Removed linux.org
-LUG list, which Michael McLagen's Linux Online, Inc. deleted without notice.
-Removed Yahoo Linux $>$ User Groups, vanished along with all the rest of
-dir.yahoo.com.  Removed CLUE: the Canadian Linux Users' Exchange at 
-www.linux.ca, which is down for rebuild but is promised to be back Q1
-2016.  Corrected URL for Linux Australia's LUG list.  Removed {\itshape Linux
-Gazette\/}, folded in 2011.  Removed {\itshape Linux Focus\/}, dormant
-since 2010.  Updated name and Web site of {\itshape LINUX for You\/} magazine, which has now become {\itshape OpenSource For You\/}.
-Added magazines {\itshape Full Circle\/}, {\itshape Linux Voice\/},
-{\itshape easyLinux\/}, {\itshape LinuxUser\/}, and {\itshape Ubuntu User\/}.
-Clarified where each magazine originates and detail national versions of
-{\itshape Linux Magazine\/}.  Replaced reference to Win4Lin with one to CrossOver
-Linux.  Added caution that Linux Consultants Guide is a decade out of
-date.  Removed Open Source Applications Foundation, which seems to have
-died shortly Mitch Kapor left it in 2008.  Added further clarification 
-about limited benefits of incorporation and insurance.  Annotated LibrePlanet 
-list as being FSF affiliates only.  Updated claim about how many LUGs 
-exist worldwide.  Updated version of CC BY-SA licence applicable to this 
-HOWTO from 3.0 to 4.0.  Included nod to realism that, no, the world at large
-is never going to adopt the usage "GNU/Linux", but please indulge me anyway.
-Linked in two appropriate places to separate Meetup.com rant.
-\item 1.8.6:  Fixed new typos and punctuation errors, revised antiquated emphasis on ftp, and averted one quibble about tax-exempt status not requiring incorporation (the 501(c)(3) exception).  Politely disagreed with Kendall's implication that everyone deserves an equal say in "big decisions".
-\item 1.8.7:  Added Software Freedom Conservancy and The Mozilla
-Foundation.  Added Linux Links UserGroups list.
-\item 1.8.8:  Dropped Dyson, a Debian-compatible Illumos
-distribution that died in the 2010s.  Substituted OpenIndiana, the
-flagship and most general-purpose Illumos distribution.  Among lists of
-LUGs, deleted lugslist.com (vanished 2018), dmoz.org (replaced by
-curlie.org on Mar. 17, 2018).  Added curlie.org, added back Kara Pritchard"s 
-LinuxUserGroups.org (as it's back).  Altered URL for "Linux Links
-UserGroups" to a search link.  Deleted antique line that "wide-scale commercial acceptance 
-(of Linux) is only newly underway", because it's 2022, and, how quaint.  Truncated most 
-of the advocacy section as irrelevant.  Changed Eric Raymond "Effective Advocacy" article 
-link to point to Internet Archive.
-Deleted {\itshape Linux User and Developer\/} magazine (UK; closed 2018). Amended URL for 
-{\itshape Open Source for You\/} magazine.  Added {\itshape Free Software Magazine\/} and 
-{\itshape Ubuntu User\/} magazine.  Removed 
-Joshua Drake's Linux Consultants Guide that had moved to Command Prompt, Inc. but
-has now vanished.  (Its predecessor incarnation, the Consultants HOWTO at tldp.org, 
-is too crufty.)  Removed Linux Counter link (retired 2018 after a quarter-century, 
-with a final estimate of worldwide Linux users of 91.9 million, as of August 2017).
-Amended URL for Mozilla Foundation.  Sprinkled some mentions of Jitsi Meet/Zoom/etc.
-Removed Colorado Linux Users and Enthusiasts, who seem to have been inactive since 
-about 2014.  Replaced India Linux Users Group - Delhi, which seems to have been abandoned 
-to a domain squatter, with India Linux Users Group Delhi.  Amended URL for Ottawa 
-Canada Linux Users Group.  Eliminated section about site tux.org, which has been blank
-or offline since Oct. 2021.  Delete mention of "ftp", because 2022.  Noted that 
-all known copies of the external German text on the process of founding a non-profit have 
-vanished.
-\end{itemize}
+%I welcome questions about and feedback on this document. Please send
+%them to me at \ifpdf
+%\href{mailto:rick@linuxmafia.com}{rick@linuxmafia.com}%
+%\else
+%\onlynameurl{rick@linuxmafia.com}%
+%\fi{}
+%. {\itshape I am especially interested in
+%hearing from LUG leaders around the world, especially outside the USA\/}.
+%Please let me know of innovative or noteworthy things your group does,
+%meriting description here.
 
-\subsection{Acknowledgements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documention history was ignored in the PDF version of this guide
+%\input{sections/history}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-I would like to give a big thank-you to Kendall Grant Clark for the 
-initial versions of this document in 1997-1998, and for trusting me to take
-over and renovate his creation starting in 2003.
+\subsection{تقدیر و تشکر}
+%\subsection{Acknowledgements}
 
-Warm regards and thanks to 
-\emph{Chris Browne} \texttt{\aexurl}
- for describing the situation with
-non-profit and charitable groups in Canada, his thoughts on financial
-donations as a way to participate in GNU/Linux and the free software and 
-open-source software movements, and his ideas about the kinds of
-political issues likely to arise within LUGs.
+از
+\tfftnt{کندال گرانت کلارک}{Kendall Grant Clark}
+برای نوشتن اولین نسخه این مستند در سال ۱۹۹۷-۱۹۹۸ و اعتماد کردن به من برای گرفتن و بازسازی
+اثر او در سال ۲۰۰۳ بسیار متشکرم.
+%I would like to give a big thank-you to Kendall Grant Clark for the 
+%initial versions of this document in 1997-1998, and for trusting me to take
+%over and renovate his creation starting in 2003.
 
-In addition, the following people have made helpful comments and
-suggestions:
+تشکری صمیمانه از
+\fftnt{کریس براون}
+بابت توضیحات او راجع به گروه‌های ناسودبر و خیریه در کانادا و نظراتش راجع به کمک‌های مالی بعنوان
+راهی برای مشارکت در گنو/لینوکس و جنبش نرم‌افزار آزاد/متن‌باز و ایده‌های او راجع به انواع مشکلات قانونی
+و سیاسی که ممکن است در لاگ‌ها اتفاق بی‌افتند.
+%Warm regards and thanks to 
+%\emph{Chris Browne} \texttt{mailto:cbbrowne@cbbrowne.com}
+% for describing the situation with
+%non-profit and charitable groups in Canada, his thoughts on financial
+%donations as a way to participate in GNU/Linux and the free software and 
+%open-source software movements, and his ideas about the kinds of
+%political issues likely to arise within LUGs.
+
+به‌علاوه افراد زیر نیز نظرات و پیشنهادات کمک کننده و مفید بسیاری داشتند و از آنها نیز متشکریم:
+%In addition, the following people have made helpful comments and
+%suggestions:
 
 \begin{itemize}
-\item Matthew Craig
-\item Jeff Garvas
-\item Greg Hankins
-\item James Hertzler
-\item Thomas Kappler
-\item Martin Karlsson
-\item Hugo van der Kooij
-\item Rohit Kumar
-\item David Lawyer
-\item Charles Lindahl
-\item Don Marti
-\item Vincenzo Virgilio
+\item \tfftnt{متیو کریگ}{Matthew Craig}
+\item \tfftnt{جف گارواس}{Jeff Garvas}
+\item \tfftnt{گرگ هانکینز}{Greg Hankins}
+\item \tfftnt{جیمز هرتزلر}{James Hertzler}
+\item \tfftnt{توماس کاپلز}{Thomas Kappler}
+\item \tfftnt{مارتین کارلسون}{Martin Karlsson}
+\item \tfftnt{هوگو ون در کویج}{Hugo van der Kooij}
+\item \tfftnt{روهیت کومار}{Rohit Kumar}
+\item \tfftnt{دیوید لویر}{David Lawyer}
+\item \tfftnt{چارلز لیندال}{Charles Lindahl}
+\item \tfftnt{دون مارتی}{Don Marti}
+\item \tfftnt{وینچنزو ویرجیلیو}{Vincenzo Virgilio}
 \end{itemize}
 
